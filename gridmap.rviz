@@ -1,5 +1,13 @@
 Panels:
-  []
+  - Class: rviz/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /LocalMap1
+        - /Planning1
+        - /Mapping1
+        - /Mapping1/simulation_map1/Autocompute Value Bounds1
 Visualization Manager:
   Class: ""
   Displays:
@@ -30,6 +38,77 @@ Visualization Manager:
         visualization: true
       Queue Size: 100
       Value: true
+
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /create/map
+      Name: Depot
+      Namespaces:
+        visualization: true
+      Queue Size: 100
+      Value: true
+
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 1.89999998
+        Min Value: -0.899999976
+        Value: false
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 0; 0; 0
+      Color Transformer: AxisColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 0; 0; 0
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: local_map
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 1
+      Size (m): 0.060000001
+      Style: Flat Squares
+      Topic: /sdf_map/occupancy_inflate
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+
+    - Alpha: 2
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 2.02683997
+        Min Value: -1.12645996
+        Value: true
+      Axis: Z
+      Channel Name: rgb
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: RGB8
+      Decay Time: 0
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 2.34176998e-38
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: PointCloud2
+      Position Transformer: XZY
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.00999999978
+      Style: Points
+      Topic: /voxel_cloud
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
 
     - Alpha: 0.699999988
       Class: rviz/Map

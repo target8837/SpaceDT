@@ -72,8 +72,8 @@ class MyViz( QWidget ):
 
     def onRightButtonClick( self ):
         if self.grid_display != None:
-            self.grid_display.subProp( "Marker Topic" ).setValue("/planning_vis/trajectory/array")
-        
+            #self.grid_display.subProp( "Marker Topic" ).setValue("/planning_vis/trajectory/array")
+            self.grid_display.subProp( "Marker Topic" ).setValue("/drone/position")
     def onLastButtonClick( self ):
         if self.grid_display != None:
             self.grid_display.subProp( "Marker Topic" ).setValue("/all")
